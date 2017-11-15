@@ -23,7 +23,7 @@ meal_with_tax = tax(meal_cost)
 meal_with_tip = tip(meal_with_tax)
 
 #Dictionary
-state_tax_rate = {'Alabama': 4/100, 'Alaska': 0, 'Arizona': 5.6/100, 'Arkansas': 6.5/100, 'California': 7.25/100, 'Colorado': 2.90/100}
+state_tax_rate = {'Alabama': 4/100, 'Alaska': 0, 'Arizona': 5.6/100, 'Arkansas': 6.5/100, 'California': 7.25/100, 'Colorado': 2.90/100, 'Connecticut': 6.35/100}
 
 # 2017 State tax rates
 connecticut_tax_rate = 6.35/ 100
