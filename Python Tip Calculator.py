@@ -8,8 +8,8 @@ def tax(bill):
   print "With tax: %f" % bill
   return bill
 
-    if alabama
-        return alabama_tax_rate
+    if state
+        return {state_tax_rate}
 
 def tip(bill):
   """Adds 15% tip to a restaurant bill."""
