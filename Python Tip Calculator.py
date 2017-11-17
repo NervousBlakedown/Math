@@ -5,11 +5,8 @@ state = raw_input()
 def tax(bill):
   """Adds 8% tax to a restaurant bill."""
   bill *= 1.08
-  print "With tax: %f" % bill
+  print "With tax: %{state_tax_rate}" % bill
   return bill
-
-    if state
-        return {state_tax_rate}
 
 def tip(bill):
   """Adds 15% tip to a restaurant bill."""
@@ -24,7 +21,8 @@ meal_with_tip = tip(meal_with_tax)
 
 #Dictionary
 state_tax_rate = {'Alabama': 4/100, 'Alaska': 0, 'Arizona': 5.6/100, 'Arkansas': 6.5/100, 'California': 7.25/100, 'Colorado': 2.90/100, 'Connecticut': 6.35/100}
-
+for i in state:
+    return {state_tax_rate}
 # 2017 State tax rates
 connecticut_tax_rate = 6.35/ 100
 delaware_tax_rate =	0.00
