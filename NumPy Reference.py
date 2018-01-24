@@ -33,3 +33,38 @@ b = np.array([2, 1])
 dot = 0
 for e, f in zip(a, b):
     dot += e*f #returns 4.
+np.sum(a*b) #gives expected result.
+(a*b).sum()
+np.dot(a, b) #best way to get expected result.
+a.dot(b)
+b.dot(a)
+amag = np.sqrt((a*a).sum())
+amag = np.linalg.norm(a)
+cosangle = a.dot(b) / (np.linalg.norm(a) * np.linalg.norm(b))
+angle = np.arccos(cosangle)
+
+#dot faster than 'for' loop.
+import numpy as np
+from datetime import datetime
+
+a = np.randn(100)
+b = np.randn(100)
+T = 100000
+
+def slow_dot_product(a, b):
+    result = 0
+    for e, f in zip(a, b)
+        result += e*f
+    return result
+
+t0 = datetime.now()
+for t in xrange(T):
+    slow_dot_product(a, b)
+dt1 = datetime.now() - t0
+
+t0 = datetime.now()
+for t in xrange(T):
+    a.dot(b)
+dt2 = datetime.now() - t0
+
+print "dt1 / dt2:", dt1.total_seconds() / dt2.total_seconds()
