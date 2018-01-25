@@ -68,3 +68,12 @@ for t in xrange(T):
 dt2 = datetime.now() - t0
 
 print "dt1 / dt2:", dt1.total_seconds() / dt2.total_seconds()
+
+#Matrices.
+Z = np.zeros(10) #makes one row of ten zeros.
+Z = np.zeros((10, 10)) #makes 10 x 10 array of zeros.
+Y = np.ones((10, 10)) #makes 10 x 10 array of ones.
+R = np.random.random((10, 10)) #makes 10 x 10 array of random numbers.
+G = np.random.randn(10, 10) #single set of parentheses on purpose.
+G.mean()
+G.var()
