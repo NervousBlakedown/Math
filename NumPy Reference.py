@@ -77,3 +77,25 @@ R = np.random.random((10, 10)) #makes 10 x 10 array of random numbers.
 G = np.random.randn(10, 10) #single set of parentheses on purpose.
 G.mean()
 G.var()
+
+#More Matrix Operations.
+A = np.array([[1, 2], [3, 4]])
+Ainv = np.linalg.inv(A)
+Ainv.dot(A) #makes sure inverse is calculated correctly.
+A.dot(Ainv) #makes sure inverse is calculated correctly.
+np.linalg.det(A) #matrix determinent.
+np.diag(A) #prints 'array([1, 4])'.
+np.diag([1, 2]) #prints 'array([[1, 0], [0,2]])'
+a = np.array([1, 2])
+b = np.array([3, 4])
+np.outer(a, b) #prints 'array([[3, 4], [6, 8]])'
+np.inner(a, b) #prints '11'
+a.dot(b) #prints '11'
+np.diag(A).sum() #prints '5'
+np.trace(A) #prints '5'
+X = np.random.randn(100, 3)
+cov = np.cov(X) #wrong. Transpose cov first.
+cov.shape #prints '(100, 100)'
+cov = np.cov(X.T) #correct.
+np.linalg.eigh(cov)
+np.linalg.eig(cov)
