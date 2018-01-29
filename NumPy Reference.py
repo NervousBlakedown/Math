@@ -99,3 +99,14 @@ cov.shape #prints '(100, 100)'
 cov = np.cov(X.T) #correct.
 np.linalg.eigh(cov)
 np.linalg.eig(cov)
+
+#Solving Linear Systems.
+A = np.array([[1, 2], [3, 4]])
+b = np.array([1, 2])
+x = np.linalg.inv(A).dot(b) #bad solution.
+x = np.linalg.solve(A, b) #always use this solution.
+
+#Word Problem.
+A = np.array([[1, 1], [1.5, 4]])
+b = np.array([2200, 5050])
+np.linalg.solve(A, b) #answer: 1500 children, 700 adults.  output = array([1500, 700])
