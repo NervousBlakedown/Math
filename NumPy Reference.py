@@ -110,3 +110,13 @@ x = np.linalg.solve(A, b) #always use this solution.
 A = np.array([[1, 1], [1.5, 4]])
 b = np.array([2200, 5050])
 np.linalg.solve(A, b) #answer: 1500 children, 700 adults.  output = array([1500, 700])
+
+#Organize Data.
+X = []
+import numpy as np
+for line in open("url_goes_here.csv"):
+    row = line.split(',')
+    sample = map(float, row)
+    X.append(sample)
+X = np.array(X)
+X.shape #output = (100, 3)
