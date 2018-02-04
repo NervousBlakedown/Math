@@ -1,3 +1,50 @@
+#Broadcasting/Indexing.
+import numpy as np
+arr = np.arange[0,11]
+arr[0:5] = 100
+arr #first five elements are now 100.
+arr.copy[] #use copy to make second one while keeping original.
+#mat[row, column] #row first, column second!
+#conditional selection.
+
+
+#Exercise Answers.
+#import numpy as np
+import numpy as np
+#create array of ten zeros
+np.zeros(10)
+#create array of ten ones
+np.ones(10)
+#create array of ten fives
+np.ones(10) * 5
+#create array of integers from ten to fifty
+np.arange(10, 51)
+#create array of even integers from 10 to 50
+np.arange(10, 51, 2)
+#create 3x3 matrix with values from 0 to 8
+np.arange(9).reshape(3, 3)
+#create 3x3 identity matrix
+np.eye(3)
+#use numpy to generate random number between 0 and 1
+np.random.rand(1)
+#use numpy to generate array of 25 random numbers sampled from a standard normal distribution
+np.random.randn(25)
+#make matrix from 0 to 1, double brackets
+np.arange(0, 101).reshape(10, 10) / 100
+#create array of 20 linearly spaced points between 0 and 1
+np.linspace(0, 1, 20)
+#matrix stuff.
+mat[:3, 1:2]
+mat[3:,:]
+#sum of all values in mat
+mat.sum()
+mat.std()
+mat.sum(axis = 0) #axis 0 = sum of rows, axis 1 = sum of columns, no axis = total matrix sum
+#use 'seed' to make sure random number generated is same each time
+np.random.seed(101)
+np.random.rand(1)
+
+
 #TensorFlow.
 import numpy as np
 my_list = [1, 2, 3]
